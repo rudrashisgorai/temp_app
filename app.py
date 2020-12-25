@@ -11,7 +11,7 @@ def temp():
     key = '5eb8acfd55b37163529efa9cbd1acbfb'
     try:
         city = request.args.get('city', type =str)
-        if city = None:
+        if city == None:
             city = 'Chicago'
 
         call = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={key}"
